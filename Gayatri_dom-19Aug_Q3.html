@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3</title>
+</head>
+<body>
+	<a href="www.google.com">Google</a><br>
+	<a href="www.quora.com">Quora</a><br>
+	<a href="www.pinterest.com">Pinterest</a><br>
+	<a href="www.amazon.com">Amazon</a><br>
+	<a href="www.myntra.com">Myntra</a><br>
+	<button onclick="fetch()">Fetch</button><br>
+	<p id="p1"></p>
+
+	<script type="text/javascript">
+		function fetch()
+		{
+			var a1 = document.getElementsByTagName("a");
+			var  l = a1.length;
+			var last = a1[l-1].getAttribute("href");
+			document.getElementById("p1").innerHTML = last;
+		}
+	</script>
+
+</body>
+</html>
