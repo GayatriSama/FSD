@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Capitalize the starting letters of word in a sentence</title>
+</head>
+<body>
+<script type="text/javascript">
+	var a=prompt("enter sentence");
+	function accept(str) {
+		   var splits = str.split(' ');
+		   for (var i = 0; i < splits.length; i++) {
+		       
+		       splits[i] = splits[i].charAt(0).toUpperCase() + splits[i].substring(1);     
+		   }
+		   return splits.join(' '); 
+		}
+
+		var res=accept(a);
+		document.write(res);
+
+</script>
+</body>
+</html>
